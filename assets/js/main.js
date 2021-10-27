@@ -69,44 +69,21 @@
      * Back to top button
      */
     let backtotop = select('.back-to-top')
+    let fixedtop = select('.fixed-top')
     if (backtotop) {
         const toggleBacktotop = () => {
             if (window.scrollY > 100) {
                 backtotop.classList.add('active')
+                fixedtop.classList.add('scrolled')
             } else {
                 backtotop.classList.remove('active')
+                fixedtop.classList.remove('scrolled')
             }
         }
         window.addEventListener('load', toggleBacktotop)
         onscroll(document, toggleBacktotop)
     }
   
-    /**
-     * Mobile nav toggle
-     */
-    on('click', '.mobile-nav-toggle', function (e) {
-        select('body').classList.toggle('mobile-nav-active')
-        this.classList.toggle('bi-list')
-        this.classList.toggle('bi-x')
-    })
-  
-    /**
-     * Scroll with ofset on links with a class name .scrollto
-     */
-    on('click', '.scrollto', function (e) {
-        if (select(this.hash)) {
-            e.preventDefault()
-  
-            let body = select('body')
-            if (body.classList.contains('mobile-nav-active')) {
-                body.classList.remove('mobile-nav-active')
-                let navbarToggle = select('.mobile-nav-toggle')
-                navbarToggle.classList.toggle('bi-list')
-                navbarToggle.classList.toggle('bi-x')
-            }
-            scrollto(this.hash)
-        }
-    }, true)
   
     /**
      * Scroll with offset on page load with hash links in the url

@@ -13,33 +13,9 @@
     <link rel="stylesheet" href="assets/css/fancybox.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="assets/js/jquery.min.js"></script>
-
 </head>
 
 <body>
-
-    <!--  Mobile nav toggle button  -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-    <div class="mobile-nav-wrap">
-        <div class="mobile-nav-box">
-            <ul class="navbar-mobile">
-                <li>                                    
-                    <form class="search-form d-flex align-items-center" method="POST" action="#">
-                        <input type="text" value="" name="q" placeholder="Search" title="Enter search keyword" class=""> 
-                        <button type="submit" title="Search">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #0d507b;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
-                        </button>
-                    </form>
-                </li>
-                <li><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> BLOG</a></li>
-                <li><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> NEWS &amp; EVENTS</a></li>
-                <li><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> CAREERS</a></li>
-                <li><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
 
     <div id="side-navigation-wrap" class="d-flex flex-column justify-content-center">
         <nav id="navbar" class="navbar nav-menu">
@@ -65,51 +41,45 @@
         </div>
     </div>
 
-    <section id="hero" class="d-flex flex-column justify-content-start">
-        <!--  Header  -->
-        <header id="header" class="d-flex flex-column justify-content-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2 col-xs-2 col-sm-2 col-md-2">
-                        <a href="#" class="mx-auto d-block"><img src="assets/img/logo.png" alt="logo" class="mx-auto d-block img-fluid"></a>
-                    </div>
-                    <div class="col-md-10 d-none d-xl-flex flex-column">
-                        <div id="primaryMenu" class="my-4">
-                            <ul class="nav justify-content-end">
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> BLOG</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> NEWS &amp; EVENTS</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> CAREERS</a></li>
-                                <li class="nav-item me-5"><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> CONTACT</a></li>
-                                <li class="nav-item">                                    
-                                    <form class="search-form d-flex align-items-center" method="POST" action="#">
-                                        <input type="text" value="" name="q" placeholder="Search" title="Enter search keyword" class=""> 
-                                        <button type="submit" title="Search">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #0d507b;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
-                                        </button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-                        <nav id="secondaryMenu">
-                            <div class="row gx-5">
-                                <div class="col text-center">
-                                    <a href="#">COMPANY</a>
-                                </div>
-                                <div class="col text-center">
-                                    <a href="#">WHAT WE DO</a>
-                                </div>
-                                <div class="col text-center">
-                                    <a href="#">INVESTORS</a>
-                                </div>
-                                <div class="col text-center">
-                                    <a href="#">RESOURCES</a>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg p-0 fixed-top">
+            <div class="container px-0">
+                <a href="#" class="navbar-brand p-0"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <i class="bi bi-list"></i>
+                </button>
+    
+                <div id="navmenu" class="collapse navbar-collapse flex-column justify-content-end align-items-end">    
+                    
+                    <ul id="primaryNav" class="navbar-nav my-lg-4">
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> BLOG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> NEWS &amp; EVENTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> CAREERS</a></li>
+                        <li class="nav-item me-5"><a class="nav-link" href="#"><i class="bi bi-caret-right-fill"></i> CONTACT</a></li>
+                        <li class="nav-item">                                    
+                            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                                <input type="text" value="" name="q" placeholder="Search" title="Enter search keyword" class=""> 
+                                <button type="submit" title="Search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #0d507b;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>                    
+    
+                    <ul id="secondNav" class="navbar-nav justify-content-between w-100 text-lg-center g-2">
+                        <li class="nav-item"><a href="#" class="nav-link">COMPANY</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">WHAT WE DO</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">INVESTORS</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">RESOURCES</a></li>
+                    </ul>
                 </div>
             </div>
-        </header><!-- End Header -->
+        </nav>
+        <!-- end navbar -->
+    </header>
+
+    <section id="hero">
 
         <div class="container">
             <div class="row">
@@ -129,6 +99,7 @@
                 </div>
             </div>
         </div>
+
         <a href="#section2" class="mouse-wrap smoothscroll">
             <span class="mouse-label">Scroll</span>
             <span class="mouse"><span class="scroll"></span></span>
