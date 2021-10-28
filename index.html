@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="assets/css/fancybox.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="assets/js/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -42,7 +44,7 @@
     </div>
 
     <header>
-        <nav class="navbar navbar-expand-lg p-0 fixed-top">
+        <nav class="navbar navbar-expand-lg p-0 pb-3 fixed-top">
             <div class="container px-0">
                 <a href="#" class="navbar-brand p-0"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
     
@@ -67,11 +69,11 @@
                         </li>
                     </ul>                    
     
-                    <ul id="secondNav" class="navbar-nav justify-content-between w-100 text-lg-center g-2">
-                        <li class="nav-item"><a href="#" class="nav-link">COMPANY</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">WHAT WE DO</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">INVESTORS</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">RESOURCES</a></li>
+                    <ul id="secondNav" class="navbar-nav justify-content-between w-100 text-lg-center">
+                        <li class="nav-item mx-lg-3"><a href="#" class="nav-link">COMPANY</a></li>
+                        <li class="nav-item mx-lg-3"><a href="#" class="nav-link">WHAT WE DO</a></li>
+                        <li class="nav-item mx-lg-3"><a href="#" class="nav-link">INVESTORS</a></li>
+                        <li class="nav-item mx-lg-3"><a href="#" class="nav-link">RESOURCES</a></li>
                     </ul>
                 </div>
             </div>
@@ -105,6 +107,10 @@
             <span class="mouse"><span class="scroll"></span></span>
         </a>
 
+        <a href="#section2" class="arrow-blue position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-down-circle h1"></i>
+        </a>
+
     </section>
 
     <main id="main">
@@ -118,78 +124,79 @@
                         services to serve <br> our customers in a holistic way.</p>
 
                     <h3 class="mb-5 b_title"><span class="not-centered">INDUSTRIES</span></h3>
-                    <div class="container mb-5">
-                        <div class="what_box row row-cols-1 row-cols-sm-2 row-cols-md-5">
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_consumer.png" class="mx-auto d-block mb-3" alt="Consumer &amp; Financial">
-                                <span>Consumer &amp; Financial</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_disaster.png" class="mx-auto d-block mb-3" alt="Disaster Recovery">
-                                <span>Disaster <br>Recovery</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_energy.png" class="mx-auto d-block mb-3" alt="Energy">
-                                <span>Energy</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_environment.png" class="mx-auto d-block mb-3"
-                                    alt="Environment">
-                                <span>Environment</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_gov.png" class="mx-auto d-block mb-3" alt="Government">
-                                <span>Government</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_health.png" class="mx-auto d-block mb-3" alt="Health">
-                                <span>Health</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_hospitality.png" class="mx-auto d-block mb-3"
-                                    alt="Hospitality">
-                                <span>Hospitality</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_socprog.png" class="mx-auto d-block mb-3"
-                                    alt="Social Programs">
-                                <span>Social Programs</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_transpo.png" class="mx-auto d-block mb-3"
-                                    alt="Transportation">
-                                <span>Transportation</span>
-                            </a>
-                        </div>
+                    
+                    <div class="what_box row row-cols-1 row-cols-sm-2 row-cols-md-5 mb-5">
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_consumer.png" class="mx-auto d-block mb-3" alt="Consumer &amp; Financial">
+                            <span>Consumer &amp; Financial</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_disaster.png" class="mx-auto d-block mb-3" alt="Disaster Recovery">
+                            <span>Disaster <br>Recovery</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_energy.png" class="mx-auto d-block mb-3" alt="Energy">
+                            <span>Energy</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_environment.png" class="mx-auto d-block mb-3"
+                                alt="Environment">
+                            <span>Environment</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_gov.png" class="mx-auto d-block mb-3" alt="Government">
+                            <span>Government</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_health.png" class="mx-auto d-block mb-3" alt="Health">
+                            <span>Health</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_hospitality.png" class="mx-auto d-block mb-3"
+                                alt="Hospitality">
+                            <span>Hospitality</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_socprog.png" class="mx-auto d-block mb-3"
+                                alt="Social Programs">
+                            <span>Social Programs</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_transpo.png" class="mx-auto d-block mb-3"
+                                alt="Transportation">
+                            <span>Transportation</span>
+                        </a>
                     </div>
 
                     <h3 class="mb-5 b_title"><span class="not-centered">SERVICES</span></h3>
-                    <div class="container">
-                        <div class="what_box row row-cols-1 row-cols-sm-2 row-cols-md-5">
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_adv.png" class="mx-auto d-block mb-3" alt="Advisory">
-                                <span>Advisory</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_analytics.png" class="mx-auto d-block mb-3" alt="Analytics">
-                                <span>Analytics</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_digital.png" class="mx-auto d-block mb-3" alt="Digital">
-                                <span>Digital</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_mm.png" class="mx-auto d-block mb-3" alt="Marketing &amp; Engagement">
-                                <span>Marketing &amp; Engagement</span>
-                            </a>
-                            <a href="#" class="col">
-                                <img src="assets/img/icon_progimp.png" class="mx-auto d-block mb-3" alt="Program Implementation">
-                                <span>Program <br> Implementation</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    
+                    <div class="what_box row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_adv.png" class="mx-auto d-block mb-3" alt="Advisory">
+                            <span>Advisory</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_analytics.png" class="mx-auto d-block mb-3" alt="Analytics">
+                            <span>Analytics</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_digital.png" class="mx-auto d-block mb-3" alt="Digital">
+                            <span>Digital</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_mm.png" class="mx-auto d-block mb-3" alt="Marketing &amp; Engagement">
+                            <span>Marketing &amp; Engagement</span>
+                        </a>
+                        <a href="#" class="col">
+                            <img src="assets/img/icon_progimp.png" class="mx-auto d-block mb-3" alt="Program Implementation">
+                            <span>Program <br> Implementation</span>
+                        </a>
+                    </div>                    
+                </div>                         
+            </div>    
+            <a href="#section3" class="arrow-white position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-down-circle h1"></i>
+            </a>         
         </section>
         <!-- end section2 -->
 
@@ -314,6 +321,9 @@
                     <img src="assets/img/chart.png" alt="Investor Overview" class="mx-auto d-block img-chart">
                 </div>
             </div>
+            <a href="#section4" class="arrow-blue position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-down-circle h1"></i>
+            </a>  
         </section>
         <!-- end section3 -->
 
@@ -322,46 +332,52 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">                    
                     <img src="assets/img/bg_pattern_section4.png" class="d-block w-100" alt="img">                                       
-                    <div class="carousel-caption text-start">                        
-                        <h2 class="b_title mb-5 f_blue"><span>CASE STUDIES</span></h2>
-                        <h3 class="blue_title">Benefits of Low Emission Development Strategies</h3>
-                        <p class="sub_heading">The Case of Clean Energy Policies in Bangladesh</p>
-                        <p class="mb-4">
-                            As a low-lying country situated in one of the world’s largest river deltas, Bangladesh
-                            is highly vulnerable to the consequences of climate variability and change. The country
-                            is the eighth most populous in the world and one of the most densely populated. Almost
-                            one third of its people live below the poverty line, and only about 60% of the
-                            population has access to electricity. At the same time, Bangladesh is coping with a
-                            serious energy crisis as a result of sluggish growth in energy supplies and intense
-                            expansion of energy demand. Furthermore, challenges associated with urbanization
-                            (especially in Dhaka, Chittagong and Khulna metropolitan areas) have led to concerns
-                            over livable environments, with problems relating to air pollution, noise pollution, and
-                            waste disposal, among others...
-                        </p>
-                        <a href="#" class="view-more">VIEW MORE<i class="bi bi-chevron-right"></i></a>
-                        <a href="#" class="view_more--bigcase mt-2">View all Case Studies <i class="bi bi-arrow-right"></i></a>
+                    <div class="carousel-caption text-start d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="b_title mb-5 f_blue"><span>CASE STUDIES</span></h2>                  
+                        <div class="slide-caption">
+                            
+                            <h3 class="blue_title">Benefits of Low Emission Development Strategies</h3>
+                            <p class="sub_heading">The Case of Clean Energy Policies in Bangladesh</p>
+                            <p class="mb-4">
+                                As a low-lying country situated in one of the world’s largest river deltas, Bangladesh
+                                is highly vulnerable to the consequences of climate variability and change. The country
+                                is the eighth most populous in the world and one of the most densely populated. Almost
+                                one third of its people live below the poverty line, and only about 60% of the
+                                population has access to electricity. At the same time, Bangladesh is coping with a
+                                serious energy crisis as a result of sluggish growth in energy supplies and intense
+                                expansion of energy demand. Furthermore, challenges associated with urbanization
+                                (especially in Dhaka, Chittagong and Khulna metropolitan areas) have led to concerns
+                                over livable environments, with problems relating to air pollution, noise pollution, and
+                                waste disposal, among others...
+                            </p>
+                            <a href="#" class="view-more">VIEW MORE<i class="bi bi-chevron-right"></i></a>
+                            <a href="#" class="view_more--bigcase mt-2">View all Case Studies <i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">                    
                     <img src="assets/img/bg_pattern_section4.png" class="d-block w-100" alt="img">                                       
-                    <div class="carousel-caption text-start">                        
-                        <h2 class="b_title mb-5 f_blue"><span>CASE STUDIES</span></h2>
-                        <h3 class="blue_title">Benefits of Low Emission Development Strategies</h3>
-                        <p class="sub_heading">The Case of Clean Energy Policies in Bangladesh</p>
-                        <p class="mb-4">
-                            As a low-lying country situated in one of the world’s largest river deltas, Bangladesh
-                            is highly vulnerable to the consequences of climate variability and change. The country
-                            is the eighth most populous in the world and one of the most densely populated. Almost
-                            one third of its people live below the poverty line, and only about 60% of the
-                            population has access to electricity. At the same time, Bangladesh is coping with a
-                            serious energy crisis as a result of sluggish growth in energy supplies and intense
-                            expansion of energy demand. Furthermore, challenges associated with urbanization
-                            (especially in Dhaka, Chittagong and Khulna metropolitan areas) have led to concerns
-                            over livable environments, with problems relating to air pollution, noise pollution, and
-                            waste disposal, among others...
-                        </p>
-                        <a href="#" class="view-more">VIEW MORE<i class="bi bi-chevron-right"></i></a>
-                        <a href="#" class="view_more--bigcase mt-2">View all Case Studies <i class="bi bi-arrow-right"></i></a>
+                    <div class="carousel-caption text-start d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="b_title mb-5 f_blue"><span>CASE STUDIES</span></h2>                  
+                        <div class="slide-caption">
+                            
+                            <h3 class="blue_title">Benefits of Low Emission Development Strategies</h3>
+                            <p class="sub_heading">The Case of Clean Energy Policies in Bangladesh</p>
+                            <p class="mb-4">
+                                As a low-lying country situated in one of the world’s largest river deltas, Bangladesh
+                                is highly vulnerable to the consequences of climate variability and change. The country
+                                is the eighth most populous in the world and one of the most densely populated. Almost
+                                one third of its people live below the poverty line, and only about 60% of the
+                                population has access to electricity. At the same time, Bangladesh is coping with a
+                                serious energy crisis as a result of sluggish growth in energy supplies and intense
+                                expansion of energy demand. Furthermore, challenges associated with urbanization
+                                (especially in Dhaka, Chittagong and Khulna metropolitan areas) have led to concerns
+                                over livable environments, with problems relating to air pollution, noise pollution, and
+                                waste disposal, among others...
+                            </p>
+                            <a href="#" class="view-more">VIEW MORE<i class="bi bi-chevron-right"></i></a>
+                            <a href="#" class="view_more--bigcase mt-2">View all Case Studies <i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -373,6 +389,9 @@
                 <span class="bi bi-arrow-right-circle" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            <a href="#section5" class="arrow-blue position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-down-circle h1"></i>
+            </a> 
         </section>
         <!-- end section4 -->
 
@@ -384,60 +403,54 @@
                     <div class="card-group">
                         <div class="card text-white">
                             <img src="assets/img/bg_section5_1.png" class="card-img" alt="news">
-                            <div class="card-img-overlay">
-                                <div class="">
-                                    <div class="badge bg-news mb-3">NEWS</div>
-                                    <h3 class="card-title">ICF Acquires We are Vista</h3>
-                                    <p class="card-text date">October 4, 2018</p>
-                                    <p class="card-text">Highly Recognized Agency will Join ICF's Growing Global Marketing and Communications Practice</p>
-                                    <p class="card-text"><a href="#" class="view-more">View more<i class="bi bi-chevron-right"></i></a></p>
-                                </div>
+                            <div class="card-img-overlay d-flex justify-content-center align-items-start flex-column">
+                                <div class="badge bg-news mb-3">NEWS</div>
+                                <h3 class="card-title">ICF Acquires We are Vista</h3>
+                                <p class="card-text date">October 4, 2018</p>
+                                <p class="card-text">Highly Recognized Agency will Join ICF's Growing Global Marketing and Communications Practice</p>
+                                <p class="card-text"><a href="#" class="view-more">View more<i class="bi bi-chevron-right"></i></a></p>                                
                             </div>
                         </div>
 
                         <div class="card text-white">
                             <img src="assets/img/bg_section5_2.png" class="card-img" alt="news">
-                            <div class="card-img-overlay">
-                                <div class="">
-                                    <div class="badge bg-news mb-3">NEWS</div>
-                                    <h3 class="card-title">ICF Wins $200 Million Contract to Conduct Demographic and
-                                        Health Surveys</h3>
-                                    <p class="card-text date">October 16, 2018</p>
-                                    <p class="card-text">Company Will Continue to Implement USAID's Gold Standard Global Survey Research Program</p>
-                                    <p class="card-text"><a href="#" class="view-more">View more<i class="bi bi-chevron-right"></i></a></p>
-                                </div>
+                            <div class="card-img-overlay d-flex justify-content-center align-items-start flex-column">                                
+                                <div class="badge bg-news mb-3">NEWS</div>
+                                <h3 class="card-title">ICF Wins $200 Million Contract to Conduct Demographic and Health Surveys</h3>
+                                <p class="card-text date">October 16, 2018</p>
+                                <p class="card-text">Company Will Continue to Implement USAID's Gold Standard Global Survey Research Program</p>
+                                <p class="card-text"><a href="#" class="view-more">View more<i class="bi bi-chevron-right"></i></a></p>                                
                             </div>
                         </div>
 
                         <div class="card text-white">
                             <img src="assets/img/bg_section5_1.png" class="card-img" alt="news">
-                            <div class="card-img-overlay">
-                                <div class="">
-                                    <div class="badge bg-events mb-3">EVENTS</div>
-                                    <h3 class="card-title">2018 SOCIETY FOR RISK ANALYSIS ANNUAL MEETING</h3>
-                                    <p class="card-text date">DECEMBER 2 - 6, 2018</p>
-                                    <p class="card-text">This conference is the premier opportunity to discuss all avenues of risk analysis with other enthusiasts from around the globe.</p>
-                                    <p class="card-text"><a href="#" class="view-more">View more<i class="bi bi-chevron-right"></i></a></p>
-                                </div>
+                            <div class="card-img-overlay d-flex justify-content-center align-items-start flex-column">                                
+                                <div class="badge bg-events mb-3">EVENTS</div>
+                                <h3 class="card-title">2018 SOCIETY FOR RISK ANALYSIS ANNUAL MEETING</h3>
+                                <p class="card-text date">DECEMBER 2 - 6, 2018</p>
+                                <p class="card-text">This conference is the premier opportunity to discuss all avenues of risk analysis with other enthusiasts from around the globe.</p>
+                                <p class="card-text"><a href="#" class="view-more">View more<i class="bi bi-chevron-right"></i></a></p>                                
                             </div>
                         </div>
 
                         <div class="card text-white">
                             <img src="assets/img/bg_section5_2.png" class="card-img" alt="news">
-                            <div class="card-img-overlay">
-                                <div class="">
-                                    <div class="badge bg-events mb-3">EVENTS</div>
-                                    <h3 class="card-title">2018 CYBERSCI SYMPOSIUM</h3>
-                                    <p class="card-text date">DECEMBER 6, 2018</p>
-                                    <p class="card-text">Leaders from the U.S. Government, academia, and the larger cyber community will come together under one roof to discuss the questions facing cybersecurity.</p>
-                                    <p class="card-text"><a href="#" class="view-more">View more<i class="bi bi-chevron-right"></i></a></p>
-                                </div>
+                            <div class="card-img-overlay d-flex justify-content-center align-items-start flex-column">                                
+                                <div class="badge bg-events mb-3">EVENTS</div>
+                                <h3 class="card-title">2018 CYBERSCI SYMPOSIUM</h3>
+                                <p class="card-text date">DECEMBER 6, 2018</p>
+                                <p class="card-text">Leaders from the U.S. Government, academia, and the larger cyber community will come together under one roof to discuss the questions facing cybersecurity.</p>
+                                <p class="card-text"><a href="#" class="view-more">View more<i class="bi bi-chevron-right"></i></a></p>                                
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="view_more--bigcase">VIEW ALL NEWS &amp; EVENTS <i class="bi bi-arrow-right"></i></a>
+                <a href="#" class="view_more--bigcase d-lg-block d-md-none d-sm-none">VIEW ALL NEWS &amp; EVENTS <i class="bi bi-arrow-right"></i></a>
             </div>
+            <a href="#contact" class="arrow-white position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-down-circle h1"></i>
+            </a>
         </section>
         <!-- end section5 -->
 
@@ -550,12 +563,13 @@
                     </div>
 
                 </div>
+                <a href="#" class="arrow-white position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle h1"></i>
+                </a>
             </div>
         </div>
     </footer>
     <!-- end footer -->
-
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-circle"></i></a>
 
     <script src="assets/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/fancybox.js"></script>

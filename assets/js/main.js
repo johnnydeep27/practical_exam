@@ -13,19 +13,6 @@
         }
     }
   
-    /**
-     * Easy event listener function
-     */
-    const on = (type, el, listener, all = false) => {
-        let selectEl = select(el, all)
-        if (selectEl) {
-            if (all) {
-                selectEl.forEach(e => e.addEventListener(type, listener))
-            } else {
-                selectEl.addEventListener(type, listener)
-            }
-        }
-    }
   
     /**
      * Easy on scroll event listener 
@@ -66,22 +53,19 @@
     }
   
     /**
-     * Back to top button
+     * nav background scroll
      */
-    let backtotop = select('.back-to-top')
     let fixedtop = select('.fixed-top')
-    if (backtotop) {
-        const toggleBacktotop = () => {
+    if (fixedtop) {
+        const toggleFixedtop = () => {
             if (window.scrollY > 100) {
-                backtotop.classList.add('active')
                 fixedtop.classList.add('scrolled')
             } else {
-                backtotop.classList.remove('active')
                 fixedtop.classList.remove('scrolled')
             }
         }
-        window.addEventListener('load', toggleBacktotop)
-        onscroll(document, toggleBacktotop)
+        window.addEventListener('load', toggleFixedtop)
+        onscroll(document, toggleFixedtop)
     }
   
   
